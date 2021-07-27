@@ -1,12 +1,11 @@
+/** @jsxImportSource theme-ui */
 import { jsx } from 'theme-ui'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 import styles from '../../src/components/button/button.module.css'
 
-export default () => {
-    const notes = new Array(15).fill(1).map((e, i) => ({ id: i, title: `This is my note ${i}` }))
-    const router = useRouter()
-    const id = 2
+export default ({notes}) => {
+    const router = useRouter();
 
     return (
         <div sx={{ variant: 'containers.page' }}>
@@ -29,10 +28,18 @@ export default () => {
                 <button onClick={e => router.push('/')}>
                     Go Home
                 </button>
-                <button onClick={e => router.push('/notes/[id]', `/notes/${id}`)} className={styles.button}>
+                <button onClick={e => router.push('/notes/[id]', `/notes/${notes[2].id}`)} className={styles.button}>
                     Notes 2
                 </button>
             </div>
         </div>
     )
 }
+
+export async function getServerSideProps() {
+    const res = await fetch(`http://localhost:3000/api/note/`)
+    const {data} = await res.json()
+    return {
+      props: {notes: data}
+    }
+  }
