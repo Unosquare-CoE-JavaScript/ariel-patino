@@ -1,4 +1,44 @@
+# Nextjs Introducction Course
+
 /.vs
 /Nextjs/node_modules
 /Nextjs/.next
 /Nextjs/.env
+
+
+
+# Nextjs Production Grade
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/NextjsProductionGrade/node_modules
+/NextjsProductionGrade/.pnp
+/NextjsProductionGrade/.pnp.js
+
+# testing
+/NextjsProductionGrade/coverage
+
+# next.js
+/NextjsProductionGrade/.next/
+/NextjsProductionGrade/out/
+
+# production
+/NextjsProductionGrade/build
+
+# misc
+/NextjsProductionGrade/.DS_Store
+/NextjsProductionGrade/*.pem
+
+# debug
+/NextjsProductionGrade/npm-debug.log*
+/NextjsProductionGrade/yarn-debug.log*
+/NextjsProductionGrade/yarn-error.log*
+
+# local env files
+/NextjsProductionGrade/.env.local
+/NextjsProductionGrade/.env.development.local
+/NextjsProductionGrade/.env.test.local
+/NextjsProductionGrade/.env.production.local
+
+# vercel
+/NextjsProductionGrade/.vercel
