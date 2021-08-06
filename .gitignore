@@ -42,3 +42,24 @@
 
 # vercel
 /NextjsProductionGrade/.vercel
+
+# lock versions
+/NextjsProductionGrade/package-lock.json
+/NextjsProductionGrade/yarn.lock
+
+#Testing React with Jest
+/TestingReactWithJest/color-button/node_modules
+/TestingReactWithJest/color-button/package-lock.json
+/TestingReactWithJest/color-button/yarn.lock
+/TestingReactWithJest/color-button/.vscode
+/TestingReactWithJest/color-button/.eslintcache
+
+/TestingReactWithJest/sundaes-on-demand/node_modules
+/TestingReactWithJest/sundaes-on-demand/package-lock.json
+/TestingReactWithJest/sundaes-on-demand/yarn.lock
+/TestingReactWithJest/sundaes-on-demand/.vscode
+/TestingReactWithJest/sundaes-on-demand/.eslintcache
+
+/TestingReactWithJest/sundae-server/node_modules
+/TestingReactWithJest/sundae-server/package-lock.json
+/TestingReactWithJest/sundae-server/.vscode
