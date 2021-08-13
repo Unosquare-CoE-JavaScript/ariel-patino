@@ -42,3 +42,10 @@
 
 # vercel
 /NextjsProductionGrade/.vercel
+
+
+# Component Patterns
+/ReactComponentPatterns/node_modules
+/ReactComponentPatterns/dist
+/ReactComponentPatterns/.DS_Store 
+
